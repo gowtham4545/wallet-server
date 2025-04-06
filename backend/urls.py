@@ -1,6 +1,10 @@
 from django.urls import path
-from .views import view
+from .Handlers.auth import *
+from .views import *
 
 urlpatterns = [
-    path("",view)
+    path("",view),
+    path("signin",signin),
+    path("login",login),
+    path("logout",logout),
 ]
